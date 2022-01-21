@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    text-decoration: none;
+    outline: none;
+    text-transform: capitalize;
+    outline: none;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 5rem;
+    }
+}
+
+section {
+    padding: 5rem 9%;
+}
+
+$black:#141414;
+$colorprimary: #888888;
+.header {
+    background: $black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    .social-media {
+        a {
+            i {
+                font-size: 2rem;
+                padding-left: 1.5rem;
+                color: #fff;
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+    .header-left {
+        #menu-btn {
+            color: #fff;
+        }
+        display: flex;
+        a {
+            display: flex;
+            color: $colorprimary;
+            align-items: center;
+            padding-left: 1.5rem;
+            i {
+                margin-right: 1rem;
+                font-size: 1.2rem;
+            }
+            h3 {
+                font-weight: 300;
+                font-size: 1.2rem;
+            }
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.home {
+    padding: 0;
+    .slide {
+        min-height: 80vh;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+}
+
+@media(max-width:991px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+}

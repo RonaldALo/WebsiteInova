@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0;
+    text-decoration: none;
+    outline: none;
+    text-transform: capitalize;
+    outline: none;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 5rem;
+}
+
+section {
+    padding: 5rem 9%;
+}
+
+.header {
+    background: #141414;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1.5rem 7%;
+}
+
+.header .social-media a i {
+    font-size: 2rem;
+    padding-left: 1.5rem;
+    color: #fff;
+}
+
+.header .social-media a i:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.header .header-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.header .header-left #menu-btn {
+    color: #fff;
+}
+
+.header .header-left a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #888888;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 1.5rem;
+}
+
+.header .header-left a i {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.header .header-left a h3 {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.header .header-left a:hover {
+    color: #fff;
+}
+
+.home {
+    padding: 0;
+}
+
+.home .slide {
+    min-height: 80vh;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+
+/*# sourceMappingURL=style.css.map */
