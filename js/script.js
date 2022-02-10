@@ -1,3 +1,4 @@
+// sliderShow 
 const swiper = new Swiper(".home-slider", {
     spaceBetween: 30,
     centeredSlides: true,

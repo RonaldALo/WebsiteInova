@@ -8,50 +8,100 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Grupo Inova</title>
 </head>
 
 <body>
     <header class="header">
         <div class="social-media">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a data-aos="zoom-in-left" data-oos-delay="300" href="#"><i class="fab fa-instagram"></i></a>
+            <a data-aos="zoom-in-left" data-oos-delay="450" href="#"><i class="fab fa-facebook"></i></a>
+            <a data-aos="zoom-in-left" data-oos-delay="600" href="#"><i class="fab fa-linkedin"></i></a>
+            <a data-aos="zoom-in-left" data-oos-delay="750" href="#"><i class="fab fa-youtube"></i></a>
         </div>
         <div class="header-left">
-            <a href="#">
+            <a data-aos="zoom-in-left" data-oos-delay="900" href="#">
                 <i class="fas fa-map-marker-alt"></i>
                 <h3>onde estamos</h3>
             </a>
-            <a href="#">
+            <a data-aos="zoom-in-left" data-oos-delay="1150" href="#">
                 <i class="fas fa-users"></i>
                 <h3>trabalhe conosco</h3>
             </a>
-            <a href="#">
+            <a data-aos="zoom-in-left" data-oos-delay="1300" href="#">
                 <i class="far fa-comments"></i>
                 <h3>Contato</h3>
             </a>
-            <a href="#">
+            <a data-aos="zoom-in-left" data-oos-delay="1450" href="#">
                 <h3>Portal de Privacidade</h3>
             </a>
-            <a href="#">
+            <a data-aos="zoom-in-left" data-oos-delay="1600" href="#">
                 <h3>Politica de Privacidade</h3>
             </a>
         </div>
     </header>
-    <section class="home" id="home">
+    <section class="banner">
         <div class="swiper home-slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide slide" style="background: url(image/Banner\ Site-1.svg)  no-repeat;"></div>
-                <div class="swiper-slide slide" style="background: url(image/Banner\ Site-2.svg)  no-repeat;"></div>
-                <div class="swiper-slide slide" style="background: url(image/Banner\ Site-3.svg)  no-repeat;"></div>
+                <div class="swiper-slide slider" style="background: url(image/banner/Banner_Desktop.svg) no-repeat;">
+                    <div class="content">
+                        <h1>Grupo Inova</h1>
+                        <p>Trabalhamos todos os dias para defender nossos valores, que são encontraddos em cada produto,serviço,atendimento ao cliente e oportunidadade que oferecemos</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slider" style="background: url(image/banner/Banner_Desktop2.svg) no-repeat;">
+                    <div class="content">
+                        <h1>Máquina e implementos Agrícolas</h1>
+                    </div>
+                </div>
+                <div class="swiper-slide slider" style="background: url(image/banner/Banner_Desktop3.svg) no-repeat;">
+                    <div class="content">
+                        <h1>Máquinas pesadas equipamentos para construção</h1>
+                    </div>
+                </div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
     </section>
+    <section class="produts">
+        <div class="box-container">
+            <div class="box">
+                <div data-aos="fade-right" data-oos-delay="300" class="title">
+                    <h1>Maquinas construção</h1>
+                    <p>Conheça a nossa linha de equipamentos pesados para mineração e construção.</p>
+                </div>
+                <div data-aos="fade-right" data-oos-delay="350" class="button">
+                    <a href="http://www.trevisomaq.com.br/" class="btn" target="_blank">Saiba Mais</a>
+                </div>
+                <div data-aos="fade-right" data-oos-delay="400" class="image">
+                    <img src="image/maquinas/trator.png" alt="">
+                </div>
+            </div>
+            <div class="box">
+                <div data-aos="fade-left" data-oos-delay="300" class="title">
+                    <h1>Maquinas construção</h1>
+                    <p>Conheça a nossa linha de equipamentos pesados para mineração e construção.</p>
+                </div>
+                <div data-aos="fade-left" data-oos-delay="350" class="button">
+                    <a href="http://www.inovamaquinas.com.br/" class="btn" target="_blank">Saiba Mais</a>
+                </div>
+                <div data-aos="fade-left" data-oos-delay="400" class="image">
+                    <img src="image/maquinas/carregadeira.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        AOS.init({
+            duration: 600,
+            offset: 150,
+        });
+    </script>
 </body>
 
 </html>
