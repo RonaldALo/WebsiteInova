@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +10,7 @@
     outline: none;
     text-transform: capitalize;
     outline: none;
-    transition: .2s linear;
+    transition: 0.2s linear;
 }
 
 html {
@@ -33,18 +34,19 @@ section {
     padding: 5rem 9%;
 }
 
-$black:#141414;
+$black: #141414;
 $colorprimary: #888888;
 $color-bg: #f5f6f8;
+
 .btn {
     display: inline-block;
     color: #fff;
     background: #29458e;
-    padding: .8rem 3rem;
+    padding: 0.8rem 3rem;
     font-weight: 500;
     font-size: 1.7rem;
     cursor: pointer;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     &:hover {
         background: $black;
     }
@@ -101,6 +103,7 @@ $color-bg: #f5f6f8;
 
 .banner {
     padding: 0;
+    margin-top: 5rem;
     .slider {
         min-height: 70vh;
         background-size: cover !important;
@@ -118,6 +121,30 @@ $color-bg: #f5f6f8;
             font-size: 1.5rem;
             max-width: 100rem;
             text-align: center;
+        }
+    }
+}
+.company {
+    .title_company {
+        text-align: center;
+        margin-top: 4rem;
+        h1 {
+            font-size: 4rem;
+        }
+    }
+    .logo_company {
+        margin-top: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            padding: 0 15rem;
+            img {
+                width: 300px !important;
+                height: 200px !important;
+            }
         }
     }
 }
@@ -156,14 +183,46 @@ $color-bg: #f5f6f8;
         }
     }
 }
+.footer {
+    background: $black;
+    padding: 5rem 9%;
 
-@media(max-width:991px) {
+    .container-info {
+        a {
+            display: flex;
+            color: $colorprimary;
+            align-items: center;
+            padding-left: 1.5rem;
+            i {
+                margin-right: 1rem;
+                font-size: 1.2rem;
+            }
+            &:hover {
+                color: #fff;
+            }
+        }
+        display: flex;
+        align-items: center;
+    }
+    .name_company {
+        h1 {
+            margin-top: 3rem;
+            font-size: 3rem;
+            color: $colorprimary;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
     html {
         font-size: 62.5%;
     }
 }
 
-@media(max-width:450px) {
+@media (max-width: 450px) {
     html {
         font-size: 50%;
     }
