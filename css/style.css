@@ -3,12 +3,14 @@
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 0;
   text-decoration: none;
   outline: none;
   text-transform: capitalize;
   outline: none;
+  -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
@@ -18,12 +20,15 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 4rem;
 }
+
 html::-webkit-scrollbar {
   width: 1rem;
 }
+
 html::-webkit-scrollbar-track {
   background: transparent;
 }
+
 html::-webkit-scrollbar-thumb {
   background: #ccc;
   border-radius: 5rem;
@@ -43,124 +48,217 @@ section {
   cursor: pointer;
   border-radius: 0.5rem;
 }
+
 .btn:hover {
-  background: #141414;
+  background: #103697;
 }
 
 .header {
   background: #141414;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1.5rem 7%;
 }
-.header .social-media a i {
-  font-size: 2rem;
-  padding-left: 1.5rem;
+
+.header .logo a {
+  color: #888888;
+}
+
+.header .logo a:hover {
   color: #fff;
 }
-.header .social-media a i:hover {
-  transform: translateY(-5px);
-}
-.header .header-left {
+
+.header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
-.header .header-left #menu-btn {
+
+.header .navbar #menu-btn {
   color: #fff;
 }
-.header .header-left a {
+
+.header .navbar a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #888888;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 1.5rem;
 }
-.header .header-left a i {
+
+.header .navbar a i {
   margin-right: 1rem;
   font-size: 1.2rem;
 }
-.header .header-left a h3 {
+
+.header .navbar a h3 {
   font-weight: 300;
   font-size: 1.2rem;
 }
-.header .header-left a:hover {
+
+.header .navbar a:hover {
   color: #fff;
 }
 
 .banner {
   padding: 0;
-  margin-top: 5rem;
+  margin-top: 2.3rem;
 }
+
+.banner .swiper-pagination {
+  display: none;
+}
+
 .banner .slider {
-  min-height: 70vh;
+  min-height: 100vh;
   background-size: cover !important;
   background-position: center !important;
 }
+
 .banner .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .banner .content h1 {
   font-size: 4rem;
 }
+
 .banner .content p {
   font-size: 1.5rem;
   max-width: 100rem;
   text-align: center;
+  margin-bottom: 3rem;
+}
+
+.arrow--area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -12rem;
+  height: 30px;
+}
+
+.arrow--area .arrow {
+  height: 15px;
+  -webkit-animation-name: arrow;
+          animation-name: arrow;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .company .title_company {
   text-align: center;
   margin-top: 4rem;
 }
+
 .company .title_company h1 {
   font-size: 4rem;
 }
+
 .company .logo_company {
   margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .company .logo_company a {
   padding: 0 15rem;
 }
+
 .company .logo_company a img {
-  width: 300px !important;
-  height: 200px !important;
+  height: 150px !important;
 }
 
 .produts .box-container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
 }
+
 .produts .box {
   padding: 0 5rem;
   margin-top: 10rem;
   background: #f5f6f8;
 }
+
 .produts .box .title {
   text-align: center;
 }
+
 .produts .box .title h1 {
   margin: 2rem 0;
   font-size: 4rem;
 }
+
 .produts .box .title p {
   font-size: 1.5rem;
 }
+
+.produts .box .social-media {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.produts .box .social-media a i {
+  font-size: 2rem;
+  padding-left: 1.5rem;
+  color: #888888;
+}
+
+.produts .box .social-media a i:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
 .produts .box .button {
   margin-top: 2rem;
   text-align: center;
 }
+
 .produts .box .image {
   overflow: hidden;
   height: 50vh;
   margin-top: 5.2rem;
 }
+
 .produts .box .image img {
   width: 100%;
   height: 100%;
@@ -172,28 +270,42 @@ section {
   background: #141414;
   padding: 5rem 9%;
 }
+
 .footer .container-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .footer .container-info a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #888888;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 1.5rem;
 }
+
 .footer .container-info a i {
   margin-right: 1rem;
   font-size: 1.2rem;
 }
+
 .footer .container-info a:hover {
   color: #fff;
 }
+
 .footer .name_company h1 {
   margin-top: 3rem;
   font-size: 3rem;
   color: #888888;
 }
+
 .footer .name_company h1:hover {
   color: #fff;
 }
@@ -203,8 +315,34 @@ section {
     font-size: 62.5%;
   }
 }
+
 @media (max-width: 450px) {
   html {
     font-size: 50%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 15px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 15px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
